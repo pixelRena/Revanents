@@ -3,6 +3,7 @@ import CardList from '../components/CardList';
 import {revs} from '../revs';
 import SearchBox from '../components/SearchBox';
 import Scroll from '../components/scroll';
+import ErrorBoundary from '../components/ErrorBoundary';
 
 class App extends Component {
 	constructor() {
@@ -30,7 +31,9 @@ class App extends Component {
 				<h1>Revanents</h1>
 				<SearchBox searchChange={this.onsearchChange}/>
 				<Scroll>
-					<CardList revs={filterRevs}/>
+					<ErrorBoundary>
+						<CardList revs={filterRevs}/>
+					</ErrorBoundary>
 				</Scroll>
 			</div>
 		);

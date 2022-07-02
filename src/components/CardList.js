@@ -2,6 +2,9 @@ import React from 'react';
 import Card from './card';
 
 const CardList = ({ revs }) => { 
+	// if (true) {
+	// 	throw new Error('Something went wrong');
+	// }
 	return(
 		<div> {
 			revs.map((user, i) => {
