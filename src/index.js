@@ -5,7 +5,6 @@ import './containers/App.css';
 import App from './containers/App';
 import reportWebVitals from './reportWebVitals';
 import 'tachyons';
-import ErrorBoundary from './components/ErrorBoundary.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

@@ -2,9 +2,9 @@ import React from 'react';
 import Card from './card';
 
 const CardList = ({ revs }) => { 
-	// if (true) {
-	// 	throw new Error('Something went wrong');
-	// }
+	// Loop through revs.js
+	// Gives each card a unique key
+	// Defines name, bloodcode, and avatar(profile image)
 	return(
 		<div> {
 			revs.map((user, i) => {

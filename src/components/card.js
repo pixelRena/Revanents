@@ -1,6 +1,8 @@
 import React from 'react';
 import '../containers/card.css';
 
+
+// Creates the card body
 const Card = ({ id, name, avatar, blood_code }) => {
 	return(
 		<div className='cardbg tc dib br3 ma2 pa3 grow bw2 shadow-5'>
