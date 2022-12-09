@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import {Provider, connect} from 'react-redux';
-import {createStore} from 'redux';
+import {Provider} from 'react-redux';
+import {createStore, applyMiddleware} from 'redux';
+import {createLogger} from 'redux-logger';
 import { searchRevs } from './reducers';
 import './index.css';
 import './containers/App.css';
@@ -11,7 +12,8 @@ import 'tachyons';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-const store = createStore(searchRevs);
+const logger = createLogger();
+const store = createStore(searchRevs, applyMiddleware(logger));
 
 root.render(
   <React.StrictMode>
