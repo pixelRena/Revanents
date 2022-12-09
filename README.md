@@ -18,6 +18,9 @@
 ## Usage
 It's as simple as typing in the search field, there is no hidden feature. Search for any revanent.
 
+## Acknowledgements
+* Code Vein - https://codevein.fandom.com/wiki/Category:Characters
+
 ## Contact
 Developer: Serena - [@pixelRena](https://twitter.com/pixelRena)<br>
 
