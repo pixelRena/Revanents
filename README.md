@@ -1,5 +1,5 @@
 <div align="center">
-<h2 align="center">Face Analyzer</h2>
+<h2 align="center">Code Vein Revanents Directory</h2>
   <p align="center">
     This is a simple directory that let's you discover the traits of revanents from Code Vein implemented with react & redux
     <br />
