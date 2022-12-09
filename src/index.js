@@ -1,5 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import {Provider, connect} from 'react-redux';
+import {createStore} from 'redux';
+import { searchRevs } from './reducers';
 import './index.css';
 import './containers/App.css';
 import App from './containers/App';
@@ -7,9 +10,14 @@ import reportWebVitals from './reportWebVitals';
 import 'tachyons';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const store = createStore(searchRevs);
+
 root.render(
   <React.StrictMode>
-    <App/>
+    <Provider store={store}>
+      <App/>
+    </Provider>
   </React.StrictMode>
 );
 

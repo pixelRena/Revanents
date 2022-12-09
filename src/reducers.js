@@ -1,12 +1,12 @@
 import { CHANGE_SEARCH_FIELD } from "./constants";
 
 const initialState = {
-    searchfield: ''
+    searchField: ''
 }
 
 // reducer
 // pure function that creates/returns an entire new object that is exactly identical to previous state
-export const searchRevs = (state=initalState, action={}) => {
+export const searchRevs = (state=initialState, action={}) => {
     switch(action.type) {
         case CHANGE_SEARCH_FIELD:
             // action received
